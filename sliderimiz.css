@@ -1,0 +1,78 @@
+.slider{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    overflow: hidden;   
+   
+    
+     
+   
+    
+}
+
+.slider-content{
+    position: absolute;
+    width: 500%;
+    animation-name: slide;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+    
+        
+    
+}
+
+.slider-item{
+    width: 20%;
+    float: left;
+    
+    
+    
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0px);
+        border: solid 10px magenta;
+    }
+    10%{
+        transform: translateX(-300px);
+        border: solid 10px orange;
+    }
+       
+    20%{
+        transform: translateX(-300px);
+        border: solid 10px black;    }
+    30%{
+        transform: translateX(-600px);
+        border: solid 10px blue;
+    }
+    40%{
+        transform: translateX(-600px);
+        border: solid 10px yellow;
+    }
+    50%{
+        transform: translateX(-900px);
+        border: solid 10px cyan;
+    }
+    60%{
+        transform: translateX(-900px);
+        border: solid 10px red;
+    }
+    70%{
+        transform: translateX(-1200px);
+        border: solid 10px white;
+    }
+    80%{
+        transform: translateX(-1200px);
+        border: solid 10px brown;
+    }
+    90%{
+        transform: translateX(0px);
+    }
+  
+}
+
+
+
